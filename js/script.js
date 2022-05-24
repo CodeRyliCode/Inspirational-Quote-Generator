@@ -14,8 +14,10 @@ project 1 - A Random Quote Generator
 let quotes = [
 
 {
-   quote: "Do not judge me by my success, judge me by how many times I fell down and got back up again.",
-  source: "Nelson Mandela"
+   quote: "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
+  source: "Marianne Williamson",
+  citation: "A Return to Love",
+  year: "1992"
 },
 {
   quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
@@ -30,11 +32,13 @@ let quotes = [
   source: "John Wooden"
 },
 {
-  quote: "Love the life you live. Live the life you love.",
-  source: "Bob Marley"
+  quote: "Do, or do not. There is no \"try\"",
+  source: "Yoda",
+  citation: "Star Wars: Episode V - The Empire Strikes Back"
 }
 
 ];
+console.log(quotes);
 
 
 
