@@ -17,7 +17,8 @@ let quotes = [
    quote: "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
   source: "Marianne Williamson",
   citation: "A Return to Love",
-  year: "1992"
+  genre: "Self-help book",
+  year: "1992",
 },
 {
   quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
@@ -91,15 +92,25 @@ quoteElements = '<p class="quote">' + randomQuote.quote + '</p><p class="source"
 //   // appropriate className, and year property to the HTML 
 //   //string
   
-if (randomQuote.hasOwnProperty('year')) {
+if (randomQuote.citation) {
+  // Code to run if your condition evaluates to true
+  quoteElements += '<span class="citation">' + randomQuote.citation + '' + '</span>';
+ }
+
+if (randomQuote.year) {
   // Code to run if your condition evaluates to true
   quoteElements += '<span class="year">' + randomQuote.year + '</span>';
-} 
- else if (randomQuote.hasOwnProperty('citation')) {
-  quoteElements += '<span class="citation">' + randomQuote.citation + '</span>';
- } else {
 
  }
+
+
+
+ if (randomQuote.genre) {
+  quoteElements += ', ' + '<span class="genre">' + randomQuote.genre + '</span>';
+ }
+
+
+ 
 
   // 5. After the two if statements, concatenate the closing </p> 
   // tag to the HTML string
