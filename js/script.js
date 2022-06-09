@@ -121,20 +121,18 @@ document.getElementById("quote-box").innerHTML = quoteElements;
 
 }
 
-function random_bg_color() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-console.log(bgColor);
+function randombgColor() {
+  const x = Math.floor(Math.random() * 200);
+  const y = Math.floor(Math.random() * 400);
+  const z = Math.floor(Math.random() * 256);
+  const bgColor = "rgb(" + x + "," + y + "," + z + ")";
 
   document.body.style.background = bgColor;
   }
 
-random_bg_color();
 
-
-
+setInterval(printQuote, 4000);
+setInterval(randombgColor, 4000);
 
 /***
  * click event listener for the print quote button
